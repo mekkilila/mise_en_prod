@@ -10,7 +10,7 @@ RUN pip install -r requirements.txt
 
 COPY src ./src
 COPY app ./app
-COPY run.sh .
+COPY ./app/run.sh .
 COPY train.py .
 
 CMD ["bash","-c", "./app/run.sh"]
