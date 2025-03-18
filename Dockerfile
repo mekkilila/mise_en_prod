@@ -9,6 +9,8 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 COPY src ./src
-COPY main.py .
+COPY app ./app
+COPY run.sh .
+COPY train.py .
 
-CMD ["python3", "main.py"]
+CMD ["bash","-c", "./app/run.sh"]
