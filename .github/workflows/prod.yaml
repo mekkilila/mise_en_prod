@@ -6,10 +6,6 @@ on:
       - main
       - dev
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 28cab9ae525f1a483825b2d9bb884eb2267b2989
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -31,8 +27,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-<<<<<<< HEAD
-          tags: votre_compte_docker_hub/application:latest
-=======
           tags: mekkilila/application:latest
->>>>>>> 28cab9ae525f1a483825b2d9bb884eb2267b2989
